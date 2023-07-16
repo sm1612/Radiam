@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web App - Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000000;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: rgba(150, 150, 150);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .image-label {
+            color: rgb(150, 150, 150);
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generated Image</h1>
+        <img src="{{ image_url }}" alt="Generated Image">
+        <div class="image-label">
+            Prompt: {{ prompt }}
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Generation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000000;
+        }
+        h1 {
+            color: rgb(150,150,150);
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn-dark {
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Radiam: The Future Of Medical Imaging</h1>
+        <form action="/generate" method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" name="prompt" placeholder="Enter the prompt">
+            </div>
+            <button type="submit" class="btn btn-dark">Generate Image</button>
+        </form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
